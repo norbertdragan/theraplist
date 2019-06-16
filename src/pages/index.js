@@ -2,14 +2,15 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Hero from "../components/Hero"
+import TherapList from "../components/TherapList"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h2>Find nomad-friendly therapists for online counseling.</h2>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Hero />
+    <TherapList />
   </Layout>
 )
 
