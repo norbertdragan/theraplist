@@ -4,6 +4,8 @@
  *
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
+/** @jsx jsx */
+import { css, jsx } from "@emotion/core"
 
 import React from "react"
 import PropTypes from "prop-types"
@@ -35,12 +37,19 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
         </div>
+        <footer
+          css={css`
+            background: var(--color-primary);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            font-weight: 600;
+          `}
+        >
+          © {new Date().getFullYear()}, Designed and built by <a>Nadia</a> and{" "}
+          <a>Norbi</a> at a Hackathon in Bali ❤️
+        </footer>
       </>
     )}
   />

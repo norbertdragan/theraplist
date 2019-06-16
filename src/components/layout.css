@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 html {
+  --color-primary: #0500ff;
+}
+
+html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

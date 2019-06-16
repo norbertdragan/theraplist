@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -9,7 +8,7 @@ import TherapList from "../components/TherapList"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero />
+    <Hero headline="Find nomad-friendly therapists for online counseling." />
     <TherapList />
   </Layout>
 )

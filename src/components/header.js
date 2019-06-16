@@ -1,32 +1,45 @@
+/** @jsx jsx */
+import { css, jsx } from "@emotion/core"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      marginBottom: `1.45rem`,
-    }}
+    css={css`
+      margin-bottom: "1.45rem";
+    `}
   >
     <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+      css={css`
+        margin: 0 auto;
+        max-width: 960px;
+        padding: 1.45rem 1.0875rem;
+        display: flex;
+        justify-content: space-between;
+      `}
     >
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
-          style={{
-            color: `#000000`,
-            textDecoration: `none`,
-            textTransform: `uppercase`,
-          }}
+          css={css`
+            color: "#000000";
+            text-decoration: none;
+            text-transform: uppercase;
+          `}
         >
           {siteTitle}
         </Link>
       </h1>
+      <Link
+        to="/join"
+        css={css`
+          color: var(--color-primary);
+          text-decoration: none;
+        `}
+      >
+        Join as a Therapist
+      </Link>
     </div>
   </header>
 )

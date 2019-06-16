@@ -1,9 +1,9 @@
 import React from "react"
 
-const Hero = () => {
+const Hero = props => {
   return (
     <section>
-      <h2>Find nomad-friendly therapists for online counseling.</h2>
+      <h2>{props.headline}</h2>
     </section>
   )
 }
