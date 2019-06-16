@@ -15,7 +15,17 @@ const Hero = props => {
         height: 20rem;
       `}
     >
-      <h2>{props.headline}</h2>
+      <h2
+        css={css`
+          font-size: 2.25rem;
+          text-align: center;
+          font-weight: 700;
+          max-width: 50rem;
+          padding: 0 2rem;
+        `}
+      >
+        Find <mark>nomad-friendly</mark> therapists for online counseling.
+      </h2>
     </section>
   )
 }

@@ -74,8 +74,8 @@ h1 {
   margin: 0.67em 0;
 }
 mark {
-  background-color: #ff0;
-  color: #000;
+  color: var(--color-primary);
+  background: none;
 }
 small {
   font-size: 80%;
@@ -257,7 +257,7 @@ h2 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
-  line-height: 1.1;
+  line-height: 1.4;
 }
 h3 {
   margin-left: 0;

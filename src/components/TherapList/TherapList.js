@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react"
 import TherapCard from "../TherapCard"
+/** @jsx jsx */
+import { css, jsx } from "@emotion/core"
 
 const TherapList = () => {
   const [therapists, setTherapists] = useState([])
@@ -15,7 +17,12 @@ const TherapList = () => {
   }, [])
 
   return (
-    <div>
+    <div
+      css={css`
+        max-width: 60rem;
+        margin: auto;
+      `}
+    >
       {therapists.map((therapist, key) => {
         return <TherapCard therapist={therapist} key={key} />
       })}
