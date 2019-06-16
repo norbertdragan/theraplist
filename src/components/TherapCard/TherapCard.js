@@ -1,5 +1,4 @@
 import React, { useEffect } from "react"
-import profilePhoto from "../../images/profile.png"
 import "./style.css"
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core"
