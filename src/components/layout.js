@@ -47,8 +47,15 @@ const Layout = ({ children }) => (
             font-weight: 600;
           `}
         >
-          © {new Date().getFullYear()}, Designed and built by <a>Nadia</a> and{" "}
-          <a>Norbi</a> at a Hackathon in Bali ❤️
+          <div
+            css={css`
+              max-width: 60rem;
+              margin: auto;
+            `}
+          >
+            © {new Date().getFullYear()}, Designed and built by <a>Nadia</a> and{" "}
+            <a>Norbi</a> at a Hackathon in Bali ❤️
+          </div>
         </footer>
       </>
     )}

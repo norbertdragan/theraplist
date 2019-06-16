@@ -53,6 +53,9 @@ a:active,
 a:hover {
   outline-width: 0;
 }
+a:visited {
+  color: var(--color-primary);
+}
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
