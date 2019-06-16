@@ -16,7 +16,6 @@ const TherapList = () => {
 
   return (
     <div>
-      <button onClick={() => console.log(therapists)}>PRESSS MEE</button>
       {therapists.map((therapist, key) => {
         return <TherapCard therapist={therapist} key={key} />
       })}
